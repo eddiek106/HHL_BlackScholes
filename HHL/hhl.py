@@ -868,7 +868,7 @@ if __name__ == "__main__":
 
     circ = QuantumCircuit(1+3+1,2)
     circ.initialize(vector,[4],normalize=True)
-    hhl_poly_pauli_rot(matrix,circ,[4],[1,2,3],M,t,C)
+    hhl_poly_pauli_rot(matrix,circ,[4],[1,2,3],M,t,C,3)
     circ.barrier()
     circ.measure(0,0)
     circ.measure(4,1)
